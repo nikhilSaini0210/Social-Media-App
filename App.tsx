@@ -1,11 +1,13 @@
-import {View, Text} from 'react-native';
+import {View, Text, StatusBar} from 'react-native';
 import React from 'react';
+import CustomSafeAreaView from '@components/global/CustomSafeAreaView';
+import OnBoardingA from '@screens/OnBoadring/OnBoardingA';
 
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <CustomSafeAreaView>
+     <OnBoardingA />
+    </CustomSafeAreaView>
   );
 };
 
