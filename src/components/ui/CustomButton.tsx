@@ -67,12 +67,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 50,
     padding: 15,
-    // marginVertical: 15,
     width: '100%',
   },
-  text: {
-    color: '#fff',
-  },
+  text: {},
   icon: {
     width: 24,
     height: 24,

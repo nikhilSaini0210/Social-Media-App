@@ -1,14 +1,8 @@
-import {View, Text, StatusBar} from 'react-native';
 import React from 'react';
-import CustomSafeAreaView from '@components/global/CustomSafeAreaView';
-import OnBoardingA from '@screens/OnBoadring/OnBoardingA';
+import Navigation from '@navigation/Navigation';
 
 const App = () => {
-  return (
-    <CustomSafeAreaView>
-     <OnBoardingA />
-    </CustomSafeAreaView>
-  );
+  return <Navigation />;
 };
 
 export default App;

@@ -27,7 +27,8 @@ const CustomInput: FC<InputProps & React.ComponentProps<typeof TextInput>> = ({
       <TextInput
         {...props}
         style={styles.inputContainer}
-        placeholderTextColor={'#ccc'}
+        placeholderTextColor={Colors.text}
+        cursorColor={'#000'}
       />
       <View style={styles.icon}>
         {props?.value?.length !== 0 && right && (
@@ -47,7 +48,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    borderRadius: 10,
+    borderRadius: 50,
     borderWidth: 0.5,
     width: '100%',
     marginVertical: 10,
@@ -60,13 +61,12 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     width: '70%',
-    fontFamily: Fonts.SemiBold,
-    fontSize: RFValue(12),
-    paddingVertical: 14,
+    fontFamily: Fonts.Medium,
+    fontSize: RFValue(16),
+    paddingVertical: 18,
     paddingBottom: 15,
     height: '100%',
     color: Colors.text,
-    bottom: -1,
   },
   icon: {
     width: '5%',
